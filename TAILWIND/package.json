@@ -1,0 +1,13 @@
+{
+  "scripts": {
+    "run":"npx @tailwindcss/cli -i ./css/main.css -o ./dist/output.css ",
+    "dev":"npx @tailwindcss/cli -i ./css/main.css -o ./dist/output.css --watch"
+  },
+
+
+  "dependencies": {
+    "@tailwindcss/cli": "^4.1.14",
+    "jquery": "^3.7.1",
+    "tailwindcss": "^4.1.14"
+  }
+}

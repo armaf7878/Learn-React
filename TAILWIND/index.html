@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tea Station</title>
+    <link rel="icon" href="./assets/logo.png" type="image/png">
+
+    <!-------------------
+        Link OutPut TailWind
+    -------------------->
+    <link rel="stylesheet" href="./dist/output.css" >
+    
+    <!-------------------
+        SCRIPTS
+    -------------------->
+    <script>
+        defer
+        type = "module" // báo trình duyệt biết sẽ sử dụng những systax hiện đại như import
+        src = "./js/main.js"
+    </script>
+
+    <!-------------------
+        GOOGLE FONTS
+    -------------------->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Lobster&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300..700&display=swap" rel="stylesheet">
+</head>
+<body>
+    
+    <section id='hero' class="h-screen max-h-[1100px] w-screen bg-gradient-to-t from-p-100 to-white overflow-clip">
+        <!-- Nav Bar -->
+        <nav aria-label="Global" class="flex items-center justify-between p-6 lg:px-8">
+            <div class="flex lg:flex-1">
+                <a href="#" class="-m-1.5 p-1.5">
+                <span class="sr-only">Your Company</span>
+                <img src="./assets/logo.png" alt="logo_tea" class="h-8 w-auto" />
+                </a>
+            </div>
+            <div class="flex lg:hidden">
+                <button type="button" command="show-modal" commandfor="mobile-menu" class="-m-2.5 inline-flex items-center justify-center rounded-md p-2.5 text-gray-700">
+                <span class="sr-only">Open main menu</span>
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" data-slot="icon" aria-hidden="true" class="size-6">
+                    <path d="M3.75 6.75h16.5M3.75 12h16.5m-16.5 5.25h16.5" stroke-linecap="round" stroke-linejoin="round" />
+                </svg>
+                </button>
+            </div>
+            <div class="hidden lg:flex lg:gap-x-12">
+                <a href="#" class="text-sm/6 font-semibold text-gray-900">Product</a>
+                <a href="#" class="text-sm/6 font-semibold text-gray-900">Features</a>
+                <a href="#" class="text-sm/6 font-semibold text-gray-900">Marketplace</a>
+                <a href="#" class="text-sm/6 font-semibold text-gray-900">Company</a>
+            </div>
+            <div class="hidden lg:flex lg:flex-1 lg:justify-end">
+                <a href="#" class="text-sm/6 font-semibold text-gray-900">Log in <span aria-hidden="true">&rarr;</span></a>
+            </div>
+        </nav>
+
+        <!--Nội dung-->
+        <div class="container relative flex items-center justify-center w-full h-[calc(100%-80px)]  xl:justify-start">
+            
+            <!--Hình Hero-->
+            <div class="absolute bottom-0 right-0  z-0 md:bottom-40 xl:top-1/2 xl:-translate-y-1/2 ">
+                <img src="./assets/hero_img.png" alt="hero_img" class='h-full xl:h-[150%] w-[150%] object-cover'>
+            </div> 
+
+            <div class="flex flex-col items-center justify-center gap-4 z-10 ">
+                <div class="xl:self-start">
+                    <h2 class="mb-2 text-xs font-semibold leading-none tracking-wider text-start uppercase font-inter">không ai <span class="text-xs text-gradient">bị bỏ rơi</span> giữa dòng đời</h2>
+                    <h1 class="text-6xl leading-none tracking-wider text-start capitalize text-p-950  font-grostek font-bold ">Go Fix</h1>
+                </div>
+                <p class="max-w-xl px-4 text-start text-n-700 font-grostek xl:self-start">“Chỉ cần một chạm, mọi sự cố trên đường sẽ được giải quyết. Ứng dụng kết nối bạn với thợ sửa xe gần nhất, hỗ trợ tận nơi từ vá lốp, tiếp xăng cho đến cứu hộ vận chuyển. Nhanh chóng – Minh bạch – An toàn trên mọi hành trình.”</p>
+                <button class="xl:self-start">
+                    <a class="btn" href="#products">Tìm hiểu sản phẩm <img src="./assets/right-arrow.svg" alt="right-arrow"></a>
+                </button>
+            </div>
+        </div>
+    </section>
+
+</body>
+</html>
